@@ -3,7 +3,6 @@ public class Computer extends HardDrive implements AutoCloseable{
     private String Model;
     private double Price;
     /** constructors */
-    public Computer(){}                                         /*default constructor*/
     public Computer(int size, String model, double price)       /*constructor accepting custom values*/
     {
         super(size);
