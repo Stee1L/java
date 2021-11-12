@@ -7,9 +7,9 @@ public class Computer extends HardDrive implements AutoCloseable{
     public Computer(int size, String model, double price)       /*constructor accepting custom values*/
     {
         super(size);
-        if (model == null) throw new ArithmeticException("Invalid name");
+        if (model == null) throw new IllegalAgumentException("Invalid name");
         else Model = model;
-        if (price <= 0) throw new ArithmeticException("Price must be greater then zero");
+        if (price <= 0) throw new IllegalAgumentException("Price must be greater then zero");
         else Price = price;
     }
     /** setters & getters */
